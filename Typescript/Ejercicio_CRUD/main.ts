@@ -2,7 +2,7 @@
 /// <reference path="./alumno.ts" />
 
 namespace TestPrueba {
-    
+    /*
     const alumnos: Prueba.Alumno[] = [];
   
     // Crear cuatro alumnos
@@ -12,13 +12,13 @@ namespace TestPrueba {
     const alumno4 = new Prueba.Alumno('Rocabado', 'Betangas', 104);
 
     alumnos.push(alumno1, alumno2, alumno3, alumno4);
-    
-   /*
-    let personas: Array<Prueba.Persona> = [new Prueba.Alumno("Porcel", "Rodrigo", 124123),
-                                           new Prueba.Alumno("Varela", "Brian", 23442),
-                                           new Prueba.Alumno("Fagundez", "Nicolas", 234234),
-                                           new Prueba.Alumno("Rocabado", "Betangas",95434)];
-*/
+    */
+   
+    let alumnos: Array<Prueba.Alumno> = [   new Prueba.Alumno("Porcel", "Rodrigo", 124123),
+                                            new Prueba.Alumno("Varela", "Brian", 23442),
+                                            new Prueba.Alumno("Fagundez", "Nicolas", 234234),
+                                            new Prueba.Alumno("Rocabado", "Betangas",95434)     ];
+
     // Mostrar por consola
     for (const alumno of alumnos) {
         console.log(alumno.ToString());
@@ -40,7 +40,7 @@ namespace TestPrueba {
             <td>${alumno.apellido}</td>
             <td>${alumno.nombre}</td>
             <td>${alumno.legajo}</td>
-        `;
+            `;
             tbody.appendChild(row);
         }
 

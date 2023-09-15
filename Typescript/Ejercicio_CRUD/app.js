@@ -92,19 +92,21 @@ var Manejador;
 /// <reference path="./alumno.ts" />
 var TestPrueba;
 (function (TestPrueba) {
-    var alumnos = [];
-    // Crear cuatro alumnos
-    var alumno1 = new Prueba.Alumno('Porcel', 'Rodrigo', 101);
-    var alumno2 = new Prueba.Alumno('Varela', 'Brian', 102);
-    var alumno3 = new Prueba.Alumno('Fagundez', 'Nicolas', 103);
-    var alumno4 = new Prueba.Alumno('Rocabado', 'Betangas', 104);
-    alumnos.push(alumno1, alumno2, alumno3, alumno4);
     /*
-     let personas: Array<Prueba.Persona> = [new Prueba.Alumno("Porcel", "Rodrigo", 124123),
-                                            new Prueba.Alumno("Varela", "Brian", 23442),
-                                            new Prueba.Alumno("Fagundez", "Nicolas", 234234),
-                                            new Prueba.Alumno("Rocabado", "Betangas",95434)];
- */
+    const alumnos: Prueba.Alumno[] = [];
+  
+    // Crear cuatro alumnos
+    const alumno1 = new Prueba.Alumno('Porcel', 'Rodrigo', 101);
+    const alumno2 = new Prueba.Alumno('Varela', 'Brian', 102);
+    const alumno3 = new Prueba.Alumno('Fagundez', 'Nicolas', 103);
+    const alumno4 = new Prueba.Alumno('Rocabado', 'Betangas', 104);
+
+    alumnos.push(alumno1, alumno2, alumno3, alumno4);
+    */
+    var alumnos = [new Prueba.Alumno("Porcel", "Rodrigo", 124123),
+        new Prueba.Alumno("Varela", "Brian", 23442),
+        new Prueba.Alumno("Fagundez", "Nicolas", 234234),
+        new Prueba.Alumno("Rocabado", "Betangas", 95434)];
     // Mostrar por consola
     for (var _i = 0, alumnos_1 = alumnos; _i < alumnos_1.length; _i++) {
         var alumno = alumnos_1[_i];
@@ -121,7 +123,7 @@ var TestPrueba;
         for (var _i = 0, alumnos_2 = alumnos; _i < alumnos_2.length; _i++) {
             var alumno = alumnos_2[_i];
             var row = document.createElement('tr');
-            row.innerHTML = "\n            <td>".concat(alumno.apellido, "</td>\n            <td>").concat(alumno.nombre, "</td>\n            <td>").concat(alumno.legajo, "</td>\n        ");
+            row.innerHTML = "\n            <td>".concat(alumno.apellido, "</td>\n            <td>").concat(alumno.nombre, "</td>\n            <td>").concat(alumno.legajo, "</td>\n            ");
             tbody.appendChild(row);
         }
         tabla.appendChild(tbody);
